@@ -1,0 +1,8 @@
+﻿<Window x:Class="GitFunkcje.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GitFunkcje()" Height="350" Width="525" Closing="Window_Closing_1" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        
+    </Grid>
+</Window>

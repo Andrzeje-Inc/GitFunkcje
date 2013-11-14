@@ -1,0 +1,35 @@
+﻿<Page x:Class="GitFunkcje.Uklad"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1024"
+	Title="Uklad">
+
+    <Grid Background="#FF4444B2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="163*"/>
+        </Grid.RowDefinitions>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="259" Padding="0" Maximum="3" SmallChange="1"  Minimum="1" Margin="29,30,0,0"/>
+        <ScrollViewer x:Name="scroll" Grid.Row="1" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Center" Width="1004" Margin="10,49,0,10">
+            <InkCanvas x:Name="Canva" Height="10000" Width="10000" Background="AliceBlue">
+                <InkCanvas.LayoutTransform>
+                    <ScaleTransform ScaleX="{Binding ElementName=slider,Path=Value}" ScaleY="{Binding ElementName=slider,Path=Value}"/>
+                </InkCanvas.LayoutTransform>
+            </InkCanvas>
+        </ScrollViewer>
+        <Button x:Name="czyszczenie" Content="Wyczysc Wykres" HorizontalAlignment="Left" Height="51" Margin="332,30,0,0" VerticalAlignment="Top" Width="173" Click="Button_Click_3" FontFamily="Viner Hand ITC"/>
+        <Button x:Name="siata" Content="Siatka" HorizontalAlignment="Left" Height="51" Margin="593,30,0,0" VerticalAlignment="Top" Width="173" Click="Button_Click_5" FontFamily="Viner Hand ITC"/>
+        <Button x:Name="koniec" Content="Zakoncz" HorizontalAlignment="Left" Height="51" Margin="822,30,0,0" VerticalAlignment="Top" Width="173" Click="koniec_Click" FontFamily="Viner Hand ITC"/>
+        <!--<Expander Header="Notatki" HorizontalAlignment="Left" Height="712" Grid.Row="1" VerticalAlignment="Top" Width="1024" VerticalContentAlignment="Stretch">
+            <ScrollViewer x:Name="donotatek" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+                <InkCanvas Background="#FFE5E5E5">
+                </InkCanvas>
+            </ScrollViewer>
+        </Expander>-->
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,37 @@
+﻿<Page x:Class="GitFunkcje.Zarzadzanie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+	Title="Zarzadzanie">
+
+    <Grid Height="600" HorizontalAlignment="Left" Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Margin="0,0,0,10" Source="tlo.png" Stretch="Fill" Grid.RowSpan="2"/>
+
+        <Menu HorizontalAlignment="Center" Height="27" Margin="128,0,326,0" VerticalAlignment="Top" FontSize="18" FontFamily="Viner Hand ITC" Width="346"  >
+            <MenuItem  Header="Quiz" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Black" Click="MenuItem_Click_1"/>
+            <MenuItem BorderBrush="Black" Header="Odpowiedź">
+                <MenuItem Header="Losuj ucznia"  Click="MenuItem_Click_2" />
+            </MenuItem>
+            <MenuItem BorderBrush="Black" Header="Układ współrzędnych" Width="193" Click="MenuItem_Click_3"/>
+
+        </Menu>
+        <DataGrid x:Name="uczniowie" HorizontalAlignment="Left" Margin="42,52,0,0" Grid.Row="1" VerticalAlignment="Top" Width="728" Height="264"/>
+
+        <Button Content="Baza uczniów" HorizontalAlignment="Left" Margin="696,4,0,0" VerticalAlignment="Top" Width="94" Height="23" Click="baza" FontFamily="Viner Hand ITC"/>
+        <Button Content="Funkcje" HorizontalAlignment="Left" Margin="586,4,0,0" VerticalAlignment="Top" Width="94" Height="23" Click="funkcje" FontFamily="Viner Hand ITC"/>
+        <TextBox x:Name="texbox1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="id ucznia" VerticalAlignment="Top" Width="72" Margin="42,334,0,0" FontFamily="Viner Hand ITC" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="texbox2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="ocena" VerticalAlignment="Top" Width="48" Margin="119,334,0,0" FontFamily="Viner Hand ITC" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Content="Oceń" HorizontalAlignment="Left" Margin="182,333,0,0" VerticalAlignment="Top" Width="77" Height="24" Click="ocen" FontFamily="Viner Hand ITC"/>
+        <DataGrid x:Name="uczniowie2" HorizontalAlignment="Left" Margin="42,367,0,0" VerticalAlignment="Top" Width="728" Height="194"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="361,343,0,0" TextWrapping="Wrap" Text="Lista Uczniów" VerticalAlignment="Top" Width="156" FontFamily="Viner Hand ITC" Foreground="#FFF3F2F2"/>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="340,32,0,0" TextWrapping="Wrap" Text="Uczniowie z ocenami" VerticalAlignment="Top" Width="156" FontFamily="Viner Hand ITC" Foreground="White"/>
+
+    </Grid>
+</Page>

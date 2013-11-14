@@ -1,0 +1,20 @@
+﻿<Page x:Class="GitFunkcje.Rysowanie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+	Title="Rysowanie">
+
+    <Grid Margin="0,0,-164,-21">
+        <Canvas x:Name="canvas1" HorizontalAlignment="Left" Height="214" Margin="321,131,0,0" VerticalAlignment="Top" Width="278" MouseLeftButtonDown="canvas1_MouseLeftButtonDown" MouseLeftButtonUp="canvas1_MouseLeftButtonUp" MouseMove="canvas1_MouseMove"/>
+        <Slider x:Name="slider1" HorizontalAlignment="Left" Height="58" Margin="43,27,0,0" VerticalAlignment="Top" Width="244" ValueChanged="slider1_ValueChanged"/>
+        <Button x:Name="rsiatka" Content="Button" HorizontalAlignment="Left" Height="85" Margin="99,487,0,0" VerticalAlignment="Top" Width="205" Click="rsiatka_Click_1"/>
+        <Button x:Name="gora" Content="Button" HorizontalAlignment="Left" Height="40" Margin="862,40,0,0" VerticalAlignment="Top" Width="61" Click="gora_Click"/>
+        <Button x:Name="lewo" Content="Button" HorizontalAlignment="Left" Height="40" Margin="830,85,0,0" VerticalAlignment="Top" Width="61" Click="lewo_Click"/>
+        <Button x:Name="prawo" Content="Button" HorizontalAlignment="Left" Height="40" Margin="896,85,0,0" VerticalAlignment="Top" Width="58" Click="prawo_Click"/>
+        <Button x:Name="dol" Content="Button" HorizontalAlignment="Left" Height="40" Margin="862,131,0,0" VerticalAlignment="Top" Width="61" RenderTransformOrigin="0.5,0.5" Click="dol_Click"/>
+
+    </Grid>
+</Page>
