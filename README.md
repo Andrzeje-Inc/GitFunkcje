@@ -1,2 +1,2 @@
-GitFunkcje--
+GitFunkcje()
 ============
